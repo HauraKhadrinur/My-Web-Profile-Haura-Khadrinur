@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum Vitae Profesional - Haura Khadrinur, Software Development Engineer. Lulusan D4 Teknologi Rekayasa Perangkat Lunak Politeknik Indonusa Surakarta.">
+  <meta name="author" content="Haura Khadrinur">
+  <title>Haura Khadrinur | Software Development Engineer - Professional CV</title>
+
+  <!-- Google Fonts: Poppins (Heading) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= STICKY TOP NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-monogram">HK</span>
+        <div class="brand-text">
+          <span class="brand-name">Haura Khadrinur</span>
+          <span class="brand-role">Software Development Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Tutup Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </nav>
+
+      <!-- Action Button & Mobile Hamburger Toggle -->
+      <div class="nav-actions">
+        <button class="btn btn-sm btn-primary print-trigger" id="download-cv-nav">
+          <i class="fa-solid fa-file-arrow-down"></i> Download CV
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN TWO-COLUMN CV LAYOUT ================= -->
+  <div class="cv-page-wrapper">
+    <div class="cv-layout-container container">
+
+      <!-- ================= LEFT COLUMN (SIDEBAR) ================= -->
+      <aside class="cv-sidebar" id="sidebar">
+
+        <!-- A. PROFILE HEADER CARD -->
+        <section class="sidebar-card profile-card" id="home">
+          <div class="profile-photo-wrapper">
+            <!-- Foto Profil Formal: Dapat diganti dengan file foto formal Anda (contoh: foto-formal.jpg) -->
+            <div class="profile-avatar">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Foto Formal Haura Khadrinur" class="avatar-img" id="profile-img">
+            </div>
+            <div class="status-indicator" title="Status: Terbuka untuk Peluang Karir">
+              <span class="status-dot"></span> Siap Berkontribusi
+            </div>
+          </div>
+
+          <div class="profile-meta">
+            <h1 class="profile-name">Haura Khadrinur</h1>
+            <p class="profile-title">Software Development Engineer</p>
+            <p class="profile-spec">Lulusan D4 Teknologi Rekayasa Perangkat Lunak</p>
+          </div>
+
+          <!-- Tombol Aksi Utama -->
+          <div class="profile-cta-buttons">
+            <button class="btn btn-primary btn-block print-trigger" id="download-cv-btn">
+              <i class="fa-solid fa-file-pdf"></i> Download CV (PDF)
+            </button>
+            <a href="#contact" class="btn btn-outline btn-block">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Informasi Kontak Langsung -->
+          <div class="sidebar-divider"></div>
+          <div class="contact-quick-list">
+            <h3 class="sidebar-heading"><i class="fa-solid fa-id-card"></i> Informasi Kontak</h3>
+            <ul class="contact-items">
+              <li class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-data">
+                  <span class="data-label">Email Resmi</span>
+                  <a href="mailto:khadrinurhaura@gmail.com" class="data-link" title="Kirim Email">khadrinurhaura@gmail.com</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="contact-data">
+                  <span class="data-label">Instagram Profesional</span>
+                  <a href="https://instagram.com/haurakhad" target="_blank" rel="noopener noreferrer" class="data-link" title="Kunjungi Profil Instagram">@haurakhad</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-data">
+                  <span class="data-label">Domisili</span>
+                  <span class="data-text">Surakarta / Indonesia</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- C. RIWAYAT PENDIDIKAN (TIMELINE VERTIKAL) -->
+        <section class="sidebar-card education-card" id="education">
+          <div class="card-header-styled">
+            <span class="header-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <h2 class="sidebar-heading">Education</h2>
+          </div>
+
+          <div class="vertical-timeline">
+            <!-- Timeline Item: Politeknik Indonusa Surakarta -->
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-period">Pendidikan Formal</span>
+                <h3 class="timeline-institution">Politeknik Indonusa Surakarta</h3>
+                <div class="timeline-degree">Diploma IV (D4)</div>
+                <div class="timeline-major">Teknologi Rekayasa Perangkat Lunak</div>
+                <p class="timeline-note">
+                  Fokus kurikulum pada rekayasa perangkat lunak terapan, arsitektur basis data, perancangan sistem informasi enterprise, serta siklus hidup pengembangan sistem (SDLC).
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- INFORMASI KOMPETENSI INTI & BAHASA -->
+        <section class="sidebar-card additional-card">
+          <div class="card-header-styled">
+            <span class="header-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <h2 class="sidebar-heading">Kompetensi Utama</h2>
+          </div>
+          <ul class="badge-list">
+            <li class="badge-item"><i class="fa-solid fa-check"></i> Software Engineering Principles</li>
+            <li class="badge-item"><i class="fa-solid fa-check"></i> SDLC & Agile Methodology</li>
+            <li class="badge-item"><i class="fa-solid fa-check"></i> Relational Database Design</li>
+            <li class="badge-item"><i class="fa-solid fa-check"></i> Clean Code & Version Control</li>
+            <li class="badge-item"><i class="fa-solid fa-check"></i> User-Centered Interface</li>
+          </ul>
+
+          <div class="sidebar-divider"></div>
+          <h4 class="sidebar-subheading"><i class="fa-solid fa-language"></i> Penguasaan Bahasa</h4>
+          <div class="language-group">
+            <div class="language-item">
+              <span class="lang-name">Bahasa Indonesia</span>
+              <span class="lang-level">Penutur Asli (Native)</span>
+            </div>
+            <div class="language-item">
+              <span class="lang-name">Bahasa Inggris</span>
+              <span class="lang-level">Kecakapan Kerja Teknis</span>
+            </div>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- ================= RIGHT COLUMN (MAIN CONTENT) ================= -->
+      <main class="cv-main-content">
+
+        <!-- B. ABOUT ME -->
+        <section class="main-section content-card reveal-on-scroll" id="about">
+          <div class="section-title-wrap">
+            <div class="section-icon-box"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <span class="section-tag">Ringkasan Eksekutif</span>
+              <h2 class="section-title">About Me</h2>
+            </div>
+          </div>
+
+          <div class="about-quote-box">
+            <p class="about-text">
+              "Saya merupakan lulusan Teknologi Rekayasa Perangkat Lunak yang memiliki ketertarikan pada pengembangan perangkat lunak, perancangan sistem informasi, pengembangan aplikasi, serta pengelolaan basis data. Memiliki semangat untuk terus mengembangkan kompetensi dan mengikuti perkembangan teknologi guna menghasilkan solusi digital yang efektif, efisien, dan sesuai dengan kebutuhan pengguna."
+            </p>
+          </div>
+
+          <!-- Nilai-nilai Kerja Profesional -->
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon"><i class="fa-solid fa-code"></i></div>
+              <h4>Reliable Code</h4>
+              <p>Menerapkan standar kode terstruktur, mudah dipelihara, dan terdokumentasi dengan baik.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h4>System-Oriented</h4>
+              <p>Menganalisis alur bisnis dan merancang basis data yang terintegrasi secara efisien.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <h4>User-Centric</h4>
+              <p>Menghadirkan antarmuka digital yang intuitif dan menyelesaikan permasalahan pengguna.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- D. TECHNICAL SKILLS -->
+        <section class="main-section content-card reveal-on-scroll" id="skills">
+          <div class="section-title-wrap">
+            <div class="section-icon-box"><i class="fa-solid fa-sliders"></i></div>
+            <div>
+              <span class="section-tag">Kompetensi Teknis</span>
+              <h2 class="section-title">Technical Skills</h2>
+            </div>
+          </div>
+          <p class="section-description">
+            Keahlian teknis yang relevan dengan bidang keahlian Teknologi Rekayasa Perangkat Lunak. Persentase indikator di bawah bersifat fleksibel dan dapat disesuaikan dengan tingkat kemahiran aktual.
+          </p>
+
+          <div class="skills-grid">
+            <!-- 1. HTML -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-html5 skill-icon"></i> HTML</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-track">
+                <!-- Ubah nilai style width atau atribut data-percent untuk mengedit persentase -->
+                <div class="progress-bar" data-percent="90%"></div>
+              </div>
+            </div>
+
+            <!-- 2. CSS -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-css3-alt skill-icon"></i> CSS</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <!-- 3. JavaScript -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-js skill-icon"></i> JavaScript</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="80%"></div>
+              </div>
+            </div>
+
+            <!-- 4. PHP -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-php skill-icon"></i> PHP</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="80%"></div>
+              </div>
+            </div>
+
+            <!-- 5. Java -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-java skill-icon"></i> Java</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="75%"></div>
+              </div>
+            </div>
+
+            <!-- 6. Python -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-python skill-icon"></i> Python</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="75%"></div>
+              </div>
+            </div>
+
+            <!-- 7. MySQL -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-database skill-icon"></i> MySQL</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <!-- 8. Database Management -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-server skill-icon"></i> Database Management</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="82%"></div>
+              </div>
+            </div>
+
+            <!-- 9. UI/UX Design -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-pen-ruler skill-icon"></i> UI/UX Design</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <!-- 10. Software Development -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-laptop-code skill-icon"></i> Software Development</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <!-- 11. System Analysis -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-chart-line skill-icon"></i> System Analysis</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="80%"></div>
+              </div>
+            </div>
+
+            <!-- 12. Git & GitHub -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon"></i> Git & GitHub</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="85%"></div>
+              </div>
+            </div>
+
+            <!-- 13. Software Testing -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-vial-circle-check skill-icon"></i> Software Testing</span>
+                <span class="skill-percent">78%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="78%"></div>
+              </div>
+            </div>
+
+            <!-- 14. Problem Solving -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name"><i class="fa-solid fa-brain skill-icon"></i> Problem Solving</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" data-percent="88%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- E. AREAS OF EXPERTISE -->
+        <section class="main-section content-card reveal-on-scroll">
+          <div class="section-title-wrap">
+            <div class="section-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+            <div>
+              <span class="section-tag">Spesialisasi</span>
+              <h2 class="section-title">Areas of Expertise</h2>
+            </div>
+          </div>
+
+          <div class="expertise-grid">
+            <!-- 1. Software Development Engineering -->
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-gears"></i></div>
+              <h3 class="expertise-name">Software Development Engineering</h3>
+              <p class="expertise-desc">
+                Perancangan, penulisan kode, dan implementasi aplikasi berskala handal dengan pendekatan rekayasa perangkat lunak yang sistematis.
+              </p>
+            </div>
+
+            <!-- 2. Web Development -->
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-globe"></i></div>
+              <h3 class="expertise-name">Web Development</h3>
+              <p class="expertise-desc">
+                Pembangunan aplikasi web responsif dan dinamis, menggabungkan arsitektur front-end terstruktur dengan logika back-end yang kokoh.
+              </p>
+            </div>
+
+            <!-- 3. Database Management -->
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-database"></i></div>
+              <h3 class="expertise-name">Database Management</h3>
+              <p class="expertise-desc">
+                Pemodelan data konseptual, normalisasi basis data relasional, pengoptimalan query SQL, serta manajemen integritas dan keamanan data.
+              </p>
+            </div>
+
+            <!-- 4. System Analysis and Design -->
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-sitemap"></i></div>
+              <h3 class="expertise-name">System Analysis and Design</h3>
+              <p class="expertise-desc">
+                Analisis kebutuhan sistem, pemodelan proses bisnis (UML, DFD, ERD), dan penyusunan spesifikasi kebutuhan perangkat lunak (SRS).
+              </p>
+            </div>
+
+            <!-- 5. UI/UX Design -->
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-pen-nib"></i></div>
+              <h3 class="expertise-name">UI/UX Design</h3>
+              <p class="expertise-desc">
+                Perancangan wireframe, user flow, dan interactive prototype yang menunjang kemudahan navigasi serta kepuasan interaksi pengguna.
+              </p>
+            </div>
+
+            <!-- 6. Software Testing and Debugging -->
+            <div class="expertise-card">
+              <div class="expertise-icon"><i class="fa-solid fa-bug-slash"></i></div>
+              <h3 class="expertise-name">Software Testing & Debugging</h3>
+              <p class="expertise-desc">
+                Pengujian fungsionalitas sistem (Black-box & White-box testing), pelacakan bug, verifikasi kebutuhan, dan evaluasi kualitas perangkat lunak.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- F. EXPERIENCE & PROJECTS -->
+        <section class="main-section content-card reveal-on-scroll" id="experience">
+          <div class="section-title-wrap">
+            <div class="section-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <span class="section-tag">Portofolio & Rekam Jejak</span>
+              <h2 class="section-title">Experience & Projects</h2>
+            </div>
+          </div>
+          <p class="section-description">
+            Dokumentasi pengalaman organisasi, riwayat kerja, proyek pengembangan sistem, dan sertifikasi keahlian. Seluruh entri di bawah ini disiapkan dalam format placeholder profesional yang siap diedit dengan data aktual.
+          </p>
+
+          <!-- 1. PENGALAMAN ORGANISASI -->
+          <div class="experience-group">
+            <h3 class="group-subtitle">
+              <i class="fa-solid fa-people-group"></i> 1. Pengalaman Organisasi
+            </h3>
+            <div class="card-stack">
+              <div class="record-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Posisi Organisasi / Jabatan - Contoh: Anggota Divisi IT & Kominfo]</h4>
+                    <span class="record-org">[Nama Himpunan Mahasiswa / Organisasi Kampus]</span>
+                  </div>
+                  <span class="record-badge">[Tahun / Periode: Contoh 2022 - 2023]</span>
+                </div>
+                <p class="record-desc">
+                  [Deskripsi Peran: Bertanggung jawab dalam pengelolaan aset digital organisasi, koordinasi publikasi teknologi informasi, serta mendukung pemeliharaan sistem informasi internal kegiatan.]
+                </p>
+              </div>
+
+              <div class="record-card placeholder-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Posisi Organisasi Tambahan - Silakan Diisi]</h4>
+                    <span class="record-org">[Nama Komite / Komunitas Teknologi]</span>
+                  </div>
+                  <span class="record-badge">[Periode: YYYY - YYYY]</span>
+                </div>
+                <p class="record-desc">
+                  [Deskripsi kontribusi, kepanitiaan, atau peran kepemimpinan yang pernah dijalankan dalam organisasi.]
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. PENGALAMAN KERJA / MAGANG -->
+          <div class="experience-group">
+            <h3 class="group-subtitle">
+              <i class="fa-solid fa-building-user"></i> 2. Pengalaman Kerja / Magang
+            </h3>
+            <div class="card-stack">
+              <div class="record-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Posisi: Contoh - Software Development Intern / Junior Engineer]</h4>
+                    <span class="record-org">[Nama Perusahaan / Instansi / Studio Pengembang]</span>
+                  </div>
+                  <span class="record-badge">[Tahun / Periode: Contoh 2023 - 2024]</span>
+                </div>
+                <p class="record-desc">
+                  [Deskripsi Tanggung Jawab: Terlibat dalam siklus pengembangan fitur perangkat lunak, perbaikan bug antarmuka dan basis data, serta kolaborasi bersama tim pengembang dalam pengujian sistem.]
+                </p>
+                <div class="record-tags">
+                  <span class="tech-tag">Web Development</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Git Workflow</span>
+                </div>
+              </div>
+
+              <div class="record-card placeholder-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Posisi Kerja / Proyek Lepas Tambahan - Silakan Diisi]</h4>
+                    <span class="record-org">[Nama Instansi / Perusahaan Klien]</span>
+                  </div>
+                  <span class="record-badge">[Periode: YYYY - YYYY]</span>
+                </div>
+                <p class="record-desc">
+                  [Rincian tugas teknis, pencapaian proyek, dan solusi perangkat lunak yang berhasil diimplementasikan.]
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. PROYEK PENGEMBANGAN WEBSITE -->
+          <div class="experience-group">
+            <h3 class="group-subtitle">
+              <i class="fa-solid fa-display"></i> 3. Proyek Pengembangan Website
+            </h3>
+            <div class="card-stack">
+              <div class="record-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Nama Proyek: Contoh - Sistem Informasi Manajemen Layanan Web]</h4>
+                    <span class="record-org">Kategori: Enterprise Web Application</span>
+                  </div>
+                  <span class="record-badge">[Tahun: 2024]</span>
+                </div>
+                <p class="record-desc">
+                  [Deskripsi: Rancang bangun platform web terintegrasi berbasis arsitektur MVC dengan fitur otentikasi peran pengguna, dashboard pelaporan dinamis, dan pengelolaan basis data terpusat.]
+                </p>
+                <div class="record-tags">
+                  <span class="tech-tag">PHP / JavaScript</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">HTML5 / CSS3</span>
+                  <span class="tech-tag">RESTful Concept</span>
+                </div>
+              </div>
+
+              <div class="record-card placeholder-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Nama Proyek Website Kedua - Silakan Diisi]</h4>
+                    <span class="record-org">Kategori: Web Portal / E-Service</span>
+                  </div>
+                  <span class="record-badge">[Tahun: YYYY]</span>
+                </div>
+                <p class="record-desc">
+                  [Rincian fungsi utama website, teknologi yang dimanfaatkan, dan dampak efisiensi operasional bagi pengguna.]
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. PROYEK PENGEMBANGAN APLIKASI -->
+          <div class="experience-group">
+            <h3 class="group-subtitle">
+              <i class="fa-solid fa-mobile-screen-button"></i> 4. Proyek Pengembangan Aplikasi
+            </h3>
+            <div class="card-stack">
+              <div class="record-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Nama Proyek: Contoh - Aplikasi Manajemen Basis Data Berbasis Desktop / Mobile]</h4>
+                    <span class="record-org">Kategori: Application Software Engineering</span>
+                  </div>
+                  <span class="record-badge">[Tahun: 2023]</span>
+                </div>
+                <p class="record-desc">
+                  [Deskripsi: Pengembangan aplikasi operasional dengan antarmuka terstruktur, validasi input data pengguna, pembuatan laporan otomatis, dan sinkronisasi database lokal/cloud.]
+                </p>
+                <div class="record-tags">
+                  <span class="tech-tag">Java / Python</span>
+                  <span class="tech-tag">Database Management</span>
+                  <span class="tech-tag">UI/UX Flow</span>
+                </div>
+              </div>
+
+              <div class="record-card placeholder-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Nama Proyek Aplikasi Kedua - Silakan Diisi]</h4>
+                    <span class="record-org">Kategori: Mobile / Desktop Solution</span>
+                  </div>
+                  <span class="record-badge">[Tahun: YYYY]</span>
+                </div>
+                <p class="record-desc">
+                  [Penjelasan arsitektur sistem aplikasi, modul algoritma, dan hasil pengujian validasi sistem.]
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. SERTIFIKASI DAN PELATIHAN -->
+          <div class="experience-group">
+            <h3 class="group-subtitle">
+              <i class="fa-solid fa-certificate"></i> 5. Sertifikasi & Pelatihan
+            </h3>
+            <div class="card-stack">
+              <div class="record-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Sertifikasi: Contoh - Sertifikasi Kompetensi Software Development / Basis Data]</h4>
+                    <span class="record-org">[Lembaga Penerbit: Contoh - BNSP / Dicoding / Cisco Networking Academy]</span>
+                  </div>
+                  <span class="record-badge">[Tahun: 2023 - Berlaku]</span>
+                </div>
+                <p class="record-desc">
+                  [Kompetensi yang diuji: Validasi kemampuan rekayasa perangkat lunak terapan, perancangan basis data relasional, dan standar penulisan kode industri.]
+                </p>
+              </div>
+
+              <div class="record-card placeholder-card">
+                <div class="record-header">
+                  <div>
+                    <h4 class="record-title">[Pelatihan / Workshop Tambahan - Silakan Diisi]</h4>
+                    <span class="record-org">[Penyelenggara Kursus / Pelatihan Resmi]</span>
+                  </div>
+                  <span class="record-badge">[Tahun: YYYY]</span>
+                </div>
+                <p class="record-desc">
+                  [Materi spesifik yang dipelajari dan kredensial sertifikasi yang diperoleh.]
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- G. CONTACT SECTION -->
+        <section class="main-section content-card reveal-on-scroll" id="contact">
+          <div class="section-title-wrap">
+            <div class="section-icon-box"><i class="fa-solid fa-address-book"></i></div>
+            <div>
+              <span class="section-tag">Komunikasi Langsung</span>
+              <h2 class="section-title">Contact</h2>
+            </div>
+          </div>
+          <p class="section-description">
+            Tertarik untuk berdiskusi mengenai peluang karir, kolaborasi rekayasa perangkat lunak, atau pertukaran informasi teknis? Silakan hubungi saya melalui jalur resmi di bawah ini.
+          </p>
+
+          <!-- Kartu Tautan Kontak Langsung -->
+          <div class="contact-links-grid">
+            <!-- Email Resmi -->
+            <a href="mailto:khadrinurhaura@gmail.com" class="direct-contact-card">
+              <div class="contact-channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-channel-info">
+                <span class="channel-title">Surel Elektronik (Email)</span>
+                <span class="channel-value">khadrinurhaura@gmail.com</span>
+                <span class="channel-action">Klik untuk Mengirim Pesan <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </a>
+
+            <!-- Instagram Resmi -->
+            <a href="https://instagram.com/haurakhad" target="_blank" rel="noopener noreferrer" class="direct-contact-card">
+              <div class="contact-channel-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="contact-channel-info">
+                <span class="channel-title">Instagram Resmi</span>
+                <span class="channel-value">@haurakhad</span>
+                <span class="channel-action">Kunjungi Profil Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Formulir Kontak Formal -->
+          <div class="formal-form-wrapper">
+            <h3 class="form-title"><i class="fa-regular fa-message"></i> Kirim Pesan / Inquiry Profesional</h3>
+            <form id="contact-form" class="formal-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name">Nama Lengkap / Instansi <span class="required">*</span></label>
+                  <input type="text" id="sender-name" name="sender-name" class="form-control" placeholder="Contoh: Budi Santoso / PT Solusi Digital" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-email">Alamat Email Resmi <span class="required">*</span></label>
+                  <input type="email" id="sender-email" name="sender-email" class="form-control" placeholder="nama@instansi.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="sender-subject">Subjek Komunikasi <span class="required">*</span></label>
+                <input type="text" id="sender-subject" name="sender-subject" class="form-control" placeholder="Contoh: Peluang Karir / Diskusi Proyek Software Development" required>
+              </div>
+              <div class="form-group">
+                <label for="sender-message">Pesan / Rincian Penawaran <span class="required">*</span></label>
+                <textarea id="sender-message" name="sender-message" rows="4" class="form-control" placeholder="Tuliskan rincian pesan atau agenda diskusi secara jelas..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-submit-message">
+                <i class="fa-solid fa-paper-plane"></i> Kirimkan Pesan
+              </button>
+              <div id="form-status-alert" class="form-status-alert"></div>
+            </form>
+          </div>
+        </section>
+
+        <!-- FOOTER FORMAL -->
+        <footer class="formal-footer">
+          <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> <strong>Haura Khadrinur</strong>. All Rights Reserved.</p>
+            <p class="footer-sub">Software Development Engineering &bull; Politeknik Indonusa Surakarta</p>
+          </div>
+          <a href="#home" class="btn-back-top" title="Kembali ke Bagian Atas Halaman" aria-label="Kembali ke atas">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </footer>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
